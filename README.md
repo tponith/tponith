@@ -14,6 +14,7 @@ Create a virtual env:
 > python -m venv plexus-env
 
 Install pip
+> python -m ensurepip --upgrade
 > python -m pip install --upgrade pip
 
 Install django
@@ -22,10 +23,11 @@ Install django
 Install mysqlclient
 > pip install mysqlclient
 
+
+Migrate the changes
 ```
-./manage.py createsuperuser
+./manage.py migrate
 ```
-This will let you select a username, provide an email address, and choose and confirm a password.
 
 * Now collecting all of the static content into the directory location:
 
