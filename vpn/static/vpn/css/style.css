@@ -58,7 +58,7 @@ li  {
   overflow: hidden;
   width: 100%;
   height: 75px;
-  background:#E5E7E9;
+  background:transparent;
 }
 #container2 {
   overflow: hidden;
@@ -78,7 +78,41 @@ li  {
 .section-header {
   padding-top: 20px;
   padding-bottom: 20px;
+  border-radius: 15px;
 }
+
+.card-container {
+  background-color: transparent !important; 
+  border-radius: 15px;
+  box-shadow: 13px 11px 6px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid white;
+
+  outline: 2px solid rgba(255, 255, 255, 0.5); 
+  outline-offset: 4px;
+}
+
+
+/* Glassy Shine Effect */
+.card-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 50%);
+  transform: skewX(-25deg);
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+}
+
+/* .card-container:hover::before {
+  left: 100%;
+  opacity: 1;
+} */
 
 .text-block {
     position: absolute;
@@ -151,6 +185,7 @@ li  {
   }
 }
 .col-lg-8 {
+  /* z-index: 1000; */
   background-image:  url(../img/patterns/border-top-right.png), url(../img/patterns/border-bottom-left.png);
   background-color: #E5E7E9;
   background-position: top right, bottom left;
@@ -1018,7 +1053,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #clients {
   padding-top: 10px;
-  background: #E5E7E9;
+  background: transparent;
+  border-radius: 15px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all 0.3s ease-in-out;
+  /* border: 2px solid white;
+
+  outline: 2px solid rgba(255, 255, 255, 0.5); 
+  outline-offset: 4px; */
+
   overflow: hidden;
 }
 
@@ -1027,6 +1072,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   opacity: 0.7;
   transition: 0.5s;
   padding: 5px 0;
+
 }
 
 #clients img:hover {
@@ -1391,11 +1437,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #E5E7E9;
+  background: #ab0030;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px 0;
-  color: #333;
-  font-size: 12px;
+  padding: 26px 0;
+  color: #E5E7E9;
+  font-size: 14px;
 }
 
 #footer .credits {
