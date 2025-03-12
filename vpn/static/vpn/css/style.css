@@ -234,7 +234,7 @@ li  {
   top: 0;
   right: 0;
   transition: all 0.5s;
-  background-color: #000034;
+  background-color: #ab0030;
   z-index: 997;
 }
 
@@ -277,7 +277,7 @@ li  {
 }
 
 #header.header-fixed {
-  background: linear-gradient(45deg, #000034 , #000034 );
+  background: linear-gradient(45deg, #ab0030 , #ab0030 );
   //background: linear-gradient(45deg,  #1d8348, #1a5276 );
   //background: linear-gradient(45deg,   #28b463, #2471a3);
   //background: linear-gradient(45deg,   #17202a, #2e4053 );
@@ -374,12 +374,12 @@ li  {
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #fff;
-  color: #000034;
-  border-color: #000034;
+  color: #ab0030;
+  border-color: #ab0030;
 }
 
 #intro .btn-get-started:hover {
-  color: #000034;
+  color: #ab0030;
   background: #f9f9db;
   font-weight: 500;
 }
@@ -522,7 +522,7 @@ li  {
   margin: 4px 0 0 0;
   padding: 10px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  background: #000034;
+  background: #ab0030;
 }
 
 .nav-menu ul li {
@@ -539,7 +539,7 @@ li  {
 }
 
 .nav-menu ul li:hover > a {
-  color: #000034;
+  color: #ab0030;
   background-color: #E5E7E9;
 }
 
@@ -580,7 +580,7 @@ li  {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: #000034;
+  background: #ab0030;
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -682,8 +682,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: block;
   width: 60px;
   height: 3px;
-  background: #000034;
-  background: linear-gradient(0deg, #000034 0%, #000034 100%);
+  background: #ab0030;
+  background: linear-gradient(0deg, #ab0030 0%, #ab0030 100%);
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -691,9 +691,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Section with backgroundpat4.
 --------------------------------*/
 .section-bg {
-  //background:url(../img/kangra.jpg) fixed center no-repeat;
-  //background-size: cover;
-  //background-color: #f9f9db;
+  /* background:url(../img/kangra.jpg) fixed center no-repeat;
+  background-size: cover;
+  background-color: #f9f9db; */
   background-image: url(../img/patterns/pat4.jpg);
   background-attachment: fixed;
 }
