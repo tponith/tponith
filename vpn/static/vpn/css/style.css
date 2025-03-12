@@ -1,3 +1,28 @@
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF862;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #660000;
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background: #990000;
+  width: 14px;
+}
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
@@ -84,7 +109,7 @@ li  {
 .card-container {
   background-color: transparent !important; 
   border-radius: 15px;
-  box-shadow: 13px 11px 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 25px 11px 6px rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   transition: all 0.3s ease-in-out;
@@ -195,9 +220,11 @@ li  {
 
 .card-header  {
   font-size: 15px;
-  background-color: #E5E7E9;
-  //background:url(../img/patterns/pattern2.jpg) center;
+  background-color: #A52A2A;
+  /* background:url(../img/patterns/pattern2.jpg) center; */
   border-color: #000034;
+  color: #f9f9db;
+
 }
 
 .card-body-wrap  {
@@ -206,17 +233,25 @@ li  {
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #E5E7E9;
+  overflow-y: hidden;
+  background-color: transparent;
   overflow-y: hidden;
   border-color: #000034;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.6) inset;
 }
 
 .card-body  {
   font-size: 14px;
   height: 200px;
-  background-color: #E5E7E9;
+  background-color: transparent;
   overflow-y: hidden;
   border-color: #000034;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.6) inset;
+
 }
 .card-body img {
   width: 80%;
@@ -313,12 +348,17 @@ li  {
 
 #header.header-fixed {
   background: linear-gradient(45deg, #ab0030 , #ab0030 );
-  //background: linear-gradient(45deg,  #1d8348, #1a5276 );
+  /* //background: linear-gradient(45deg,  #1d8348, #1a5276 );
   //background: linear-gradient(45deg,   #28b463, #2471a3);
-  //background: linear-gradient(45deg,   #17202a, #2e4053 );
-  padding: 20px 0;
-  height: 72px;
+  //background: linear-gradient(45deg,   #17202a, #2e4053 ); */
+  padding: 12px 0;
+  height: 42px;
   transition: all 0.5s;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#header.header-fixed #logo img{
+  height: 32px;
 }
 /*--------------------------------------------------------------
 # Intro Section
