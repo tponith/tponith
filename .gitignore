@@ -15,7 +15,7 @@ __pycache__/
 *.pyc
 __pycache__/
 local_settings.py
-
+plexus-env/
 .env
 
 # C extensions

@@ -13,7 +13,7 @@
             </div>
             <div class="col-lg-6">
                 <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-                    Made with <i style='color:red' class='fa fa-heart blink_me'></i> by <a target="_blank" href="https://therishabh.in/"> Rishabh <i>(CSE Dual Degree: Batch 2019)</i></a>.
+                    Made with <i style='color:yellow' class='fa fa-heart blink_me'></i> by  Training and Placement Office.
                 </nav>
             </div>
 
@@ -33,9 +33,20 @@
 <script src="{% static 'vpn/lib/superfish/hoverIntent.js' %}"></script>
 <script src="{% static 'vpn/lib/superfish/superfish.min.js' %}"></script>
 <script src="{% static 'vpn/lib/magnific-popup/magnific-popup.min.js' %}"></script>
+<!-- <script src="https://unpkg.com/@studio-freight/lenis@latest/bundled/lenis.min.js"></script> -->
 
-<!-- Template Main Javascript File -->
 <script src="{% static 'vpn/js/main.js' %}"></script>
+
+<script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
+<script>
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+lenis.on('scroll', (e) => {
+//   console.log(e);
+});
+</script>
 
 </body>
 
