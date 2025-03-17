@@ -5,7 +5,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #FFF862;
+  background: #FAF0B3;
   border-radius: 10px;
 }
 
@@ -427,7 +427,7 @@ li  {
   transition: 0.4s;
 }
 
-#header {
+/* #header {
   padding: 30px 0;
   height: 92px;
   position: fixed;
@@ -437,7 +437,7 @@ li  {
   transition: all 0.5s;
   background-color: #660000;
   z-index: 997;
-}
+} */
 
 #header #logo {
   float: left;
@@ -491,6 +491,35 @@ li  {
 #header.header-fixed #logo img{
   height: 32px;
 }
+
+#header {
+  padding: 30px 0;
+  margin-bottom: 100px !important;
+  height: 92px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #660000;
+  z-index: 997;
+  transition: all 0.5s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#header::after {
+  content: "";
+  position: absolute;
+  bottom: -30px; /* Ensures the pattern is below the navbar */
+  left: 0;
+  width: 100%;
+  height: 52px; /* Adjust height for larger semicircles */
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 0 40 Q 20 20, 40 20 T 35 20 Q 80 5, 100 40 V 0 H 0 Z' fill='%23660000'/%3E%3C/svg%3E");
+  background-size: 80px 60px; /* Controls semicircle width & height */
+  background-repeat: repeat-x;
+  pointer-events: none;
+  z-index: -1; /* Keeps it behind the header */
+}
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -548,7 +577,7 @@ li  {
   font-size: 48px;
   font-weight: 400;
   line-height: 56px;
-  //font-family: 'Courgette', cursive;
+  font-family: 'Courgette', cursive;
   font-family: 'Satisfy', cursive;
   color: #fff;
   text-shadow: 2px 2px 3px #000;
@@ -648,6 +677,9 @@ li  {
   padding: 0;
   list-style: none;
 }
+
+
+
 
 .nav-menu ul {
   position: absolute;

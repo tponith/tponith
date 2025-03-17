@@ -26,8 +26,14 @@ def reach(request):
 def functionaries(request):
     return render(request, "vpn/functionaries.html", {})
 
+def student_functionaries(request):
+    return render(request, "vpn/student_functionaries.html", {})
+
 def director(request):
     return render(request, "vpn/director.html", {})
+
+def registrar(request):
+    return render(request, "vpn/registrar.html", {})
 
 def office(request):
     return render(request, "vpn/office.html", {})
